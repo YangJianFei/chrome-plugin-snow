@@ -41,7 +41,7 @@
         },
         {
             "matches": [
-                "https://www.zhihu.com/*"
+                "https://*.zhihu.com/*"
             ],
             "js": [
                 "src/zhihu.js"
