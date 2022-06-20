@@ -1,0 +1,24 @@
+.yangjianfei {
+    color: red;
+}
+
+/* 自动展开csdn文章 */
+.article_content {
+    height: auto !important;
+    overflow: auto !important;
+}
+.blog-extension-box {
+    display: none !important;
+}
+.hide-article-box {
+    display: none !important;
+}
+/* 关闭csdn登录框 */
+.passport-login-container {
+    display: none !important;
+}
+
+/* 关闭谷歌广告 */
+.adsbygoogle {
+    display: none !important;
+}

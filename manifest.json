@@ -1,0 +1,63 @@
+{
+    "name": "滑雪式丝滑浏览模式",
+    "description": "自动展开折叠框、隐藏框、关闭广告等。。。",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "src/popup.html",
+        "default_icon": {
+            "16": "src/assets/image/snow16.png",
+            "32": "src/assets/image/snow32.png",
+            "48": "src/assets/image/snow48.png",
+            "128": "src/assets/image/snow128.png"
+        }
+    },
+    "icons": {
+        "16": "src/assets/image/snow16.png",
+        "32": "src/assets/image/snow32.png",
+        "48": "src/assets/image/snow48.png",
+        "128": "src/assets/image/snow128.png"
+    },
+    "options_page": "src/options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "src/snow.css"
+            ],
+            "js": [
+                "src/snow.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://www.zhihu.com/*"
+            ],
+            "js": [
+                "src/zhihu.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://www.haccinsv.cn/*",
+                "https://test.haccinsv.cn:82/*",
+                "https://test.reconova.com:82/*"
+            ],
+            "js": [
+                "src/reconova.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
