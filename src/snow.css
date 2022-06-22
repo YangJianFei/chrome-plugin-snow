@@ -17,8 +17,24 @@
 .passport-login-container {
     display: none !important;
 }
+/* csdn文章直接复制 */
+body pre,
+body pre code {
+    user-select: auto !important;
+}
+pre .signin {
+    display: none !important;
+}
 
 /* 关闭谷歌广告 */
 .adsbygoogle {
+    display: none !important;
+}
+
+/* IT1352去掉查看全文 */
+.arc-body-main {
+    height: auto;
+}
+.arc-body-main-more {
     display: none !important;
 }
