@@ -52,10 +52,20 @@
             "matches": [
                 "https://www.haccinsv.cn/*",
                 "https://test.haccinsv.cn:82/*",
-                "https://test.reconova.com:82/*"
+                "https://test.reconova.com:82/*",
+                "http://localhost:*/hndx-*/*"
             ],
             "js": [
                 "src/reconova.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://*.segmentfault.com/*"
+            ],
+            "js": [
+                "src/segmentfault.js"
             ],
             "run_at": "document_end"
         }
