@@ -7,15 +7,15 @@
  * Copyright (c) 2022 
  */
 
-let timer = 0;
+let zhihuTimer = 0;
 const closeModal = () => {
     const num = 50;
     const button = document.querySelector('.Modal-wrapper .Modal-closeButton');
     if (button) {
         button.click();
-    } else if (timer < num) {
+    } else if (zhihuTimer < num) {
         setTimeout(closeModal, 500);
-        timer++;
+        zhihuTimer++;
     }
 }
 

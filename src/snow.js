@@ -7,15 +7,15 @@
  * Copyright (c) 2022 
  */
 
-let timer = 0;
+let snowTimer = 0;
 const closeAdvert = () => {
     const num = 50;
     const advert = document.querySelector('html>.adsbygoogle');
     if (advert) {
         advert.remove();
-    } else if (timer < num) {
+    } else if (snowTimer < num) {
         setTimeout(closeAdvert, 500);
-        timer++;
+        snowTimer++;
     }
 }
 

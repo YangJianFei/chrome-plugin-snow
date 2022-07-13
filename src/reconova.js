@@ -7,7 +7,7 @@
  * Copyright (c) 2022 黑发
  */
 
-let timer = 0;
+let rTimer = 0;
 const closeAgree = () => {
     const num = 50;
     const advert = document.querySelector('.agreement-content');
@@ -16,9 +16,9 @@ const closeAgree = () => {
         document.querySelectorAll('.ivu-checkbox-input').forEach(checkbox => {
             !checkbox.checked && checkbox.click();
         });
-    } else if (timer < num) {
+    } else if (rTimer < num) {
         setTimeout(closeAgree, 500);
-        timer++;
+        rTimer++;
     }
 }
 

@@ -7,15 +7,15 @@
  * Copyright (c) 2022 黑发
  */
 
-let timer = 0;
+let sfTimer = 0;
 const closeModal = () => {
     const num = 50;
     const button = document.querySelector('.modal-fullscreen-sm-down .btn-close');
     if (button) {
         button.click();
-    } else if (timer < num) {
+    } else if (sfTimer < num) {
         setTimeout(closeModal, 500);
-        timer++;
+        sfTimer++;
     }
 }
 
