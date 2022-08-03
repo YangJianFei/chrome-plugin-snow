@@ -50,10 +50,12 @@
         },
         {
             "matches": [
+                "https://vp.reconova.com/*",
+                "https://vt.reconova.com/*",
                 "https://www.haccinsv.cn/*",
                 "https://test.haccinsv.cn:82/*",
                 "https://test.reconova.com:82/*",
-                "http://localhost:*/hndx-*/*"
+                "http://localhost:*/*"
             ],
             "js": [
                 "src/reconova.js"
